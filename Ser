@@ -1,0 +1,24 @@
+package teste;
+
+public class ser{
+    String nome;
+    int idade;
+  
+    public ser(String nome, int idade){
+      this.idade = idade;
+      this.nome = nome;
+  
+    }
+  
+    void SetNome(String nome){
+      this.nome = nome;
+    }
+  
+  void SetIdade(int idade){
+    this.idade = idade;
+   }
+  public String saudacao(){
+    return null;
+
+  }
+  }
