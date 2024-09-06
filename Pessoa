@@ -1,0 +1,23 @@
+package teste;
+
+// Modificadores de acesso
+public class pessoa extends ser {
+    String sobrenome;
+
+    public pessoa(String nome, int idade, String sobrenome) {
+        super(nome, idade);
+        this.sobrenome = sobrenome;
+    }
+
+    void criaMain() {
+        Main meuMain = new Main();
+        System.out.println(meuMain.nome);
+        System.out.println(meuMain.salary);
+        this.idade = 22;
+    }
+
+    // Remova a anotação @Override
+    public String saudacao() {
+        return "Olá, meu nome é " + this.nome + " " + this.sobrenome;
+    }
+}
