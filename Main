@@ -1,0 +1,24 @@
+package teste;
+
+// import java.util.ArrayList;
+
+public class Main {
+    
+    public String nome;
+     protected int salary;
+    public static void main(String[] args) {
+        ser meuSerAnimal = new cachorro("Lola", 3, "Samira");
+        ser meuSerHumano = new pessoa("Samira", 22, "Samira");
+        meuSerAnimal.SetNome("Samira");
+        System.out.println(meuSerAnimal.saudacao());
+        System.out.println(meuSerHumano.saudacao());
+    }
+private void atualizaSalario(){
+    this.salary = 400;
+}
+
+public int getSalary(){
+    this.atualizaSalario();
+    return this.salary;
+}
+}
